@@ -14,7 +14,7 @@ func _physics_process(delta:float)-> void:
 	
 
 	velocity = move_and_slide(velocity)
-	is_grounded=_check_is_ground()
+	is_grounded = _check_is_ground()
 		
 func _get_input():		
 	var move_direction=int(Input.is_action_pressed("move_right"))- int(Input.is_action_pressed("move_left"))
